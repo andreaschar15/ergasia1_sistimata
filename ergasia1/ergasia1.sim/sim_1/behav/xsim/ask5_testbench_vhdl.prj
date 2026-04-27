@@ -1,0 +1,7 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../../ask5.vhdl" \
+"../../../../../ass1.vhd" \
+
+# Do not sort compile order
+nosort

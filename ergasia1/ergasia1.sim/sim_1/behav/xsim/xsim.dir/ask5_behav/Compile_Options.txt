@@ -1,0 +1,1 @@
+--incr --debug "typical" --relax --mt "8" -L "xil_defaultlib" -L "secureip" --snapshot "ask5_behav" "xil_defaultlib.ask5" -log "elaborate.log" 

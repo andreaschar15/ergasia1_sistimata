@@ -3,35 +3,39 @@ use ieee.std_logic_1164.ALL;
 use IEEE.STD_LOGIC_ARITH.ALL;
 use IEEE.STD_LOGIC_UNSIGNED.ALL; 
 
--- Uncomment the following library declaration if using
--- arithmetic functions with Signed or Unsigned values
---USE ieee.numeric_std.ALL;
+
+ENTITY ask5_testbench IS
+END ask5_testbench;
  
-ENTITY ENTER NAME IS
-END ENTER NAME;
- 
-ARCHITECTURE behavior OF ENTER NAME IS 
+ARCHITECTURE behavior OF  ask5_testbench IS
  
     -- Component Declaration for the Unit Under Test (UUT)
  
-    COMPONENT ENTER NAME
+    COMPONENT ask5
     PORT(
-         D : IN  std_logic_vector(3 downto 0);
-         Q : OUT  std_logic_vector(1 downto 0)
+         SW : IN  std_logic_vector(3 downto 0);
+         D1 : OUT  std_logic;
+         D0 : OUT  std_logic_vector(6 downto 0);
+         AN : OUT  std_logic_vector(3 downto 0)
         );
     END COMPONENT;
     
 
    signal ds : std_logic_vector(3 downto 0) := (others => '0');
 
-   signal qs : std_logic_vector(1 downto 0);
+   signal led1 : std_logic;
+   signal qs : std_logic_vector(6 downto 0);
+   signal anodes : std_logic_vector(3 downto 0);
    signal count : STD_LOGIC_VECTOR (3 downto 0) := "0000";
+
 	
 BEGIN
  
-   uut: lab3_decoder_3x8 PORT MAP (
-          d => ds,
-          q => qs
+   uut: entity work.ask5 PORT MAP (
+          SW => ds,
+          D1 => led1,
+          D0 => qs,
+          AN => anodes
         );
 
 
@@ -40,11 +44,11 @@ BEGIN
 
 	begin
 		
-        for k in 0 to 3 loop   
+        for k in 0 to 15 loop   
     
 
 		  wait for 5 ns;
-		  d <= count;
+		  ds <= count;
 		  
 		  wait for 10 ns;
 		  
