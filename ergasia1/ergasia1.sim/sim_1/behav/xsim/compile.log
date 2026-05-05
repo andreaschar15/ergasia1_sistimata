@@ -1,4 +1,0 @@
-INFO: [VRFC 10-163] Analyzing VHDL file "/home/ac/uni/sem6/computational_systems/ergasia1/ask5.vhdl" into library xil_defaultlib
-INFO: [VRFC 10-3107] analyzing entity 'ask5'
-INFO: [VRFC 10-163] Analyzing VHDL file "/home/ac/uni/sem6/computational_systems/ergasia1/ass1.vhd" into library xil_defaultlib
-INFO: [VRFC 10-3107] analyzing entity 'ask5_testbench'

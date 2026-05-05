@@ -3,8 +3,8 @@
 # SW Build 6299465 on Fri Nov 14 12:34:56 MST 2025
 # IP Build 6300035 on Fri Nov 14 10:48:45 MST 2025
 # SharedData Build 6298862 on Thu Nov 13 04:50:51 MST 2025
-# Start of session at: Mon Apr 27 17:19:50 2026
-# Process ID         : 28541
+# Start of session at: Thu Apr 30 13:29:24 2026
+# Process ID         : 63453
 # Current directory  : /home/ac/uni/sem6/computational_systems/ergasia1/ergasia1/ergasia1.runs/synth_1
 # Command line       : vivado -log ask5.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source ask5.tcl
 # Log file           : /home/ac/uni/sem6/computational_systems/ergasia1/ergasia1/ergasia1.runs/synth_1/ask5.vds
@@ -13,12 +13,12 @@
 # Platform           : Arch
 # Operating System   : Arch Linux
 # Processor Detail   : AMD Ryzen 5 7530U with Radeon Graphics
-# CPU Frequency      : 1935.403 MHz
+# CPU Frequency      : 2002.486 MHz
 # CPU Physical cores : 6
 # CPU Logical cores  : 12
 # Host memory        : 14475 MB
 # Swap memory        : 7238 MB
 # Total Virtual      : 21713 MB
-# Available Virtual  : 14935 MB
+# Available Virtual  : 16718 MB
 #-----------------------------------------------------------
 source ask5.tcl -notrace

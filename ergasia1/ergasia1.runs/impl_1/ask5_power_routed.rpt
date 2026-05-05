@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2025.2 (lin64) Build 6299465 Fri Nov 14 12:34:56 MST 2025
-| Date             : Mon Apr 27 17:21:07 2026
+| Date             : Thu Apr 30 13:30:13 2026
 | Host             : atom running 64-bit Arch Linux
 | Command          : report_power -file ask5_power_routed.rpt -pb ask5_power_summary_routed.pb -rpx ask5_power_routed.rpx
 | Design           : ask5
@@ -30,14 +30,14 @@ Table of Contents
 ----------
 
 +--------------------------+--------------+
-| Total On-Chip Power (W)  | 8.955        |
+| Total On-Chip Power (W)  | 8.351        |
 | Design Power Budget (W)  | Unspecified* |
 | Power Budget Margin (W)  | NA           |
-| Dynamic (W)              | 8.830        |
-| Device Static (W)        | 0.125        |
+| Dynamic (W)              | 8.233        |
+| Device Static (W)        | 0.118        |
 | Effective TJA (C/W)      | 5.0          |
-| Max Ambient (C)          | 40.2         |
-| Junction Temperature (C) | 69.8         |
+| Max Ambient (C)          | 43.2         |
+| Junction Temperature (C) | 66.8         |
 | Confidence Level         | Low          |
 | Setting File             | ---          |
 | Simulation Activity File | ---          |
@@ -52,13 +52,13 @@ Table of Contents
 +----------------+-----------+----------+-----------+-----------------+
 | On-Chip        | Power (W) | Used     | Available | Utilization (%) |
 +----------------+-----------+----------+-----------+-----------------+
-| Slice Logic    |     0.027 |       10 |       --- |             --- |
-|   LUT as Logic |     0.027 |        4 |     20800 |            0.02 |
-|   Others       |     0.000 |        2 |       --- |             --- |
-| Signals        |     0.095 |       12 |       --- |             --- |
-| I/O            |     8.708 |       16 |       106 |           15.09 |
-| Static Power   |     0.125 |          |           |                 |
-| Total          |     8.955 |          |           |                 |
+| Slice Logic    |     0.028 |       10 |       --- |             --- |
+|   LUT as Logic |     0.028 |        5 |     20800 |            0.02 |
+|   Others       |     0.000 |        1 |       --- |             --- |
+| Signals        |     0.106 |       14 |       --- |             --- |
+| I/O            |     8.100 |       17 |       106 |           16.04 |
+| Static Power   |     0.118 |          |           |                 |
+| Total          |     8.351 |          |           |                 |
 +----------------+-----------+----------+-----------+-----------------+
 
 
@@ -68,9 +68,9 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+-------------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) | Powerup (A) | Budget (A)  | Margin (A) |
 +-----------+-------------+-----------+-------------+------------+-------------+-------------+------------+
-| Vccint    |       1.000 |     0.192 |       0.138 |      0.054 |       NA    | Unspecified | NA         |
-| Vccaux    |       1.800 |     0.336 |       0.319 |      0.017 |       NA    | Unspecified | NA         |
-| Vcco33    |       3.300 |     2.461 |       2.460 |      0.001 |       NA    | Unspecified | NA         |
+| Vccint    |       1.000 |     0.201 |       0.154 |      0.048 |       NA    | Unspecified | NA         |
+| Vccaux    |       1.800 |     0.313 |       0.296 |      0.017 |       NA    | Unspecified | NA         |
+| Vcco33    |       3.300 |     2.288 |       2.287 |      0.001 |       NA    | Unspecified | NA         |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
 | Vcco18    |       1.800 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
 | Vcco15    |       1.500 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
@@ -135,7 +135,7 @@ Table of Contents
 +------+-----------+
 | Name | Power (W) |
 +------+-----------+
-| ask5 |     8.830 |
+| ask5 |     8.233 |
 +------+-----------+
 
 
